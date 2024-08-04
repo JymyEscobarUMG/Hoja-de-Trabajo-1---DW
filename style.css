@@ -21,6 +21,17 @@ a:hover {
     color: #2980b9;
 }
 
+.navbar{
+    background-color: #075e3c !important;
+} 
+
+.navbar a {
+    color: white !important;
+}
+
+.color1 {
+    background-color: rgb(0 147 79);
+}
 /* Sección de Indice */
 #Indice {
     background-color: #ecf0f1;
@@ -50,7 +61,6 @@ a:hover {
 
 /* Sección Titulo */
 #Titulo {
-    background-color: #3498db;
     padding: 30px 0;    
 }
 
@@ -164,7 +174,6 @@ a:hover {
     color: white;
     text-align: center;
     padding: 15px 0;
-    position: fixed;
     width: 100%;
     bottom: 0;
 }
