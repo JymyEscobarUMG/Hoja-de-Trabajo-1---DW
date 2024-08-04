@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alojamiento - Bonanza La Ponderosa</title>
+    <meta name="description" content="Opciones de alojamiento en Bonanza La Ponderosa.">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Bonanza La Ponderosa</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="./index.html" id="inicioDropdown" role="button">
+                            Inicio
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="inicioDropdown">
+                            <li><a class="dropdown-item" href="./index.html#Titulo">Titulo</a></li>
+                            <li><a class="dropdown-item" href="./index.html#Descripcion">Descripcion</a></li>
+                            <li><a class="dropdown-item" href="./index.html#Galeria">Galería</a></li>
+                            <li><a class="dropdown-item" href="./index.html#TablaItinerarios">Tabla de itinerarios</a></li>
+                            <li><a class="dropdown-item" href="./index.html#ListaActividades">Lista de actividades</a></li>
+                            <li><a class="dropdown-item" href="./index.html#Footer">Pie de página</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./atracciones.html">Atracciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./alojamiento.html">Alojamiento</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Titulo -->
+    <section class="text-center p-5 bg-success text-white">
+        <h1 class="text-white">Alojamiento en Bonanza La Ponderosa</h1>
+    </section>
+
+    <!-- Descripción de Alojamiento -->
+    <section class="container mt-5">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active text-success" id="cabanas-tab" data-bs-toggle="tab" data-bs-target="#cabanas"
+                    type="button" role="tab" aria-controls="cabanas" aria-selected="true">Cabañas</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link text-success" id="habitaciones-tab" data-bs-toggle="tab" data-bs-target="#habitaciones"
+                    type="button" role="tab" aria-controls="habitaciones" aria-selected="false">Habitaciones</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link text-success" id="camping-tab" data-bs-toggle="tab" data-bs-target="#camping" type="button"
+                    role="tab" aria-controls="camping" aria-selected="false">Camping</button>
+            </li>
+        </ul>
+        <div class="tab-content mt-4" id="myTabContent">
+            <div class="tab-pane fade show active" id="cabanas" role="tabpanel" aria-labelledby="cabanas-tab">
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <img src="./img/cabania.jpg" class="img-fluid" alt="Cabañas">
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <h3>Cabañas</h3>
+                        <p>Nuestras cabañas ofrecen comodidad y privacidad en medio de la naturaleza. Equipadas con
+                            todas las comodidades modernas, son perfectas para una escapada relajante.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="habitaciones" role="tabpanel" aria-labelledby="habitaciones-tab">
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <img src="./img/hospedaje.jpg" class="img-fluid" alt="Habitaciones">
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <h3>Habitaciones</h3>
+                        <p>Nuestras habitaciones son ideales para quienes buscan una estancia cómoda y económica.
+                            Disfruta de un ambiente acogedor y de un servicio de calidad.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="camping" role="tabpanel" aria-labelledby="camping-tab">
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <img src="./img/camping.jpg"
+                            class="img-fluid" alt="Camping">
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <h3>Camping</h3>
+                        <p>Si prefieres una experiencia al aire libre, nuestra área de camping es perfecta para ti.
+                            Conéctate con la naturaleza y disfruta de la tranquilidad del entorno.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        Jymy Daniel Francisco Escobar Zacarías © 2024
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
