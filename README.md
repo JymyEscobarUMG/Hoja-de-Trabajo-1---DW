@@ -1,5 +1,7 @@
 # Hoja de Trabajo 3
-Se agregan estilos a los encabezados, se centra el contenido, se agrega un estandar de tamaño a las imagenes de la galeria y se agrega hover y trnasicion escalar para agrandar la imagen al hacer hover, se agregan estilos a tabla y listado de actividades.
+Se implementa Bootstrap 5.3 en el cual se implementa NAV, carrusel en pagina principal, CARD's en atrancciones y Tabs en alojamiento.
+Se implementan estilos css para midificar los estilos predeterminados de Bootstrap.
+Se implementan media query para galeria de imagenes.
 
 ### Mi sitio web publicado.
 [https://hojadetrabajo3-jymy.netlify.app/](https://hojadetrabajo3-jymy.netlify.app/).
