@@ -9,15 +9,15 @@
         content="Hotel, Restaurante y Parque de atracciones Bonanza La Ponderosa en Chimaltenango.">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar sticky-top navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Bonanza La Ponderosa</a>
+            <a class="navbar-brand" href="index.html">Bonanza La Ponderosa</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -28,14 +28,13 @@
                         <a class="nav-link dropdown-toggle" href="./index.html" id="inicioDropdown" role="button">
                             Inicio
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="inicioDropdown">
+                        <ul id="menuInicio" class="dropdown-menu" aria-labelledby="inicioDropdown">
                             <li><a class="dropdown-item" href="./index.html#Titulo">Titulo</a></li>
                             <li><a class="dropdown-item" href="./index.html#Descripcion">Descripcion</a></li>
                             <li><a class="dropdown-item" href="./index.html#Galeria">Galería</a></li>
-                            <li><a class="dropdown-item" href="./index.html#TablaItinerarios">Tabla de itinerarios</a>
-                            </li>
-                            <li><a class="dropdown-item" href="./index.html#ListaActividades">Lista de actividades</a>
-                            </li>
+                            <li><a class="dropdown-item" href="./index.html#TablaItinerarios">Tabla de Itinerarios</a></li>
+                            <li><a class="dropdown-item" href="./index.html#Comentarios">Comentarios</a></li>
+                            <li><a class="dropdown-item" href="./index.html#ListaActividades">Lista de actividades</a></li>
                             <li><a class="dropdown-item" href="./index.html#Footer">Pie de página</a></li>
                         </ul>
                     </li>
@@ -44,6 +43,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./alojamiento.html">Alojamiento</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -136,7 +138,7 @@
 
     <!-- Tabla de Itinerarios -->
     <section id="TablaItinerarios" class="container mt-5">
-        <h2 class="text-center">Tabla de itinerarios</h2>
+        <h2 class="text-center">Tabla de Itinerarios</h2>
         <table class="table table-striped">
             <thead class="table-primary">
                 <tr>
@@ -175,6 +177,12 @@
         </table>
     </section>
 
+    <!-- Comentarios -->
+    <section id="Comentarios" class="container mt-5">
+        <h2 class="text-center">Comentarios</h2>
+        <div id="ListaComentarios" class="container"></div>
+    </section>
+
     <!-- Lista de Actividades -->
     <section id="ListaActividades" class="container mt-5 mb-5">
         <h2 class="text-center">Lista de Actividades</h2>
@@ -199,6 +207,7 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
