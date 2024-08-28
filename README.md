@@ -1,7 +1,8 @@
-# Hoja de Trabajo 3
-- Se implementa Bootstrap 5.3 en el cual se implementa NAV, carrusel en pagina principal, CARD's en atrancciones y Tabs en alojamiento.
-- Se implementan estilos css para midificar los estilos predeterminados de Bootstrap.
-- Se implementan media query para galeria de imagenes.
+# Hoja de Trabajo 4
+- Se implementa pagina para apartado de contactanos.
+- Se implementa apartado de comentarios aleatorios.
+- Se implementa enlaces para acceso a comentarios y contactanos.
+- Se implementas funciones JavaScript en carpeta js.
 
 ### Mi sitio web publicado.
 [https://hojadetrabajo3-jymy.netlify.app/](https://hojadetrabajo3-jymy.netlify.app/).
