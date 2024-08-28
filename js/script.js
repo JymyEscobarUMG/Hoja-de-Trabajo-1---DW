@@ -1,8 +1,8 @@
 'strict'
 let listaComentarios = document.getElementById('ListaComentarios');
 let nombres = [
-    'Jymy Escobar', 'Oscar Orellana', 'Mario Garcia', 'Cludia Peréz', 'Dora López', 
-    'Anderson Ordoñez', 'Monica Hernandez', 'Evelyn Ortiz', 'Gaby Ortiz', 'Laura Estrada', 
+    'Jymy Escobar', 'Oscar Orellana', 'Mario Garcia', 'Cludia Peréz', 'Dora López',
+    'Anderson Ordoñez', 'Monica Hernandez', 'Evelyn Ortiz', 'Gaby Ortiz', 'Laura Estrada',
     'Pedro Rivera', 'Erick Denilson', 'Edgar Urizar', 'Daniel Schaad', 'Fabricio Garcia'
 ];
 let comentarios = [
@@ -31,7 +31,14 @@ function generarComentarioHTML(nombre, comentario) {
             </div>
             <div class="card-body">
                 <p class="card-text">${comentario}</p>
-            </div>
+                <div id="calificacion" class="star-rating">
+                    <i class="bi bi-star-fill text-info" data-value="1"></i>
+                    <i class="bi bi-star-fill text-info" data-value="2"></i>
+                    <i class="bi bi-star-fill text-info" data-value="3"></i>
+                    <i class="bi bi-star-fill text-info" data-value="4"></i>
+                    <i class="bi bi-star-fill text-muted" data-value="5"></i>
+                </div>
+            </div>               
         </div>
     `;
 }
@@ -43,10 +50,10 @@ function random(min, max) {
 }
 
 let htmlComentario1 = generarComentarioHTML(nombres[random(0, 4)], comentarios[random(0, 4)]);
-listaComentarios.insertAdjacentHTML('beforeend', htmlComentario1);    
+listaComentarios.insertAdjacentHTML('beforeend', htmlComentario1);
 
 let htmlComentario2 = generarComentarioHTML(nombres[random(5, 9)], comentarios[random(5, 9)]);
-listaComentarios.insertAdjacentHTML('beforeend', htmlComentario2);  
+listaComentarios.insertAdjacentHTML('beforeend', htmlComentario2);
 
 let htmlComentario3 = generarComentarioHTML(nombres[random(10, 14)], comentarios[random(10, 14)]);
 listaComentarios.insertAdjacentHTML('beforeend', htmlComentario3);  
